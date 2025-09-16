@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript HTML DOM</h2>
+        <div id = "main">
+        </div>
+        <p id="demo"></p>
+        <script>
+            var x = document.getElementById("main");
+            var y = x.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML = 'Paragraf pertama dari tag p index 0) dalam div "main" adalah: ' + y[0].innerHTML;
+        </script>
+    </body>
+</body>
+</html>

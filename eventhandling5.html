@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh 5</title>
+</head>
+<body>
+    <h3>JavaScript HTML event</h3>
+    <p>click untuk menampilkan Tanggal</p>
+    <button id="myBtn"> Click </button>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("myBtn").onclick = displayDate;
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+         function mymessage() {
+            alert("Pesan ini akan muncul dihalaman di load");
+        }
+    </script>
+    <head>
+        <body onload="mymessage">
+    </head>
+</body>
+</html>
